@@ -22,10 +22,7 @@ python -u run.py \
   --d_model 16 \
   --d_ff 32 \
   --des 'Exp' \
-  --itr 1 \
-  --version Fourier \
-  --mode_select random \
-  --modes 32
+  --itr 1
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -49,10 +46,7 @@ python -u run.py \
   --d_model 16 \
   --d_ff 32 \
   --des 'Exp' \
-  --itr 1 \
-  --version Fourier \
-  --mode_select random \
-  --modes 32
+  --itr 1
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -76,10 +70,7 @@ python -u run.py \
   --d_model 16 \
   --d_ff 32 \
   --des 'Exp' \
-  --itr 1 \
-  --version Fourier \
-  --mode_select random \
-  --modes 32
+  --itr 1
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -103,7 +94,4 @@ python -u run.py \
   --d_model 16 \
   --d_ff 32 \
   --des 'Exp' \
-  --itr 1 \
-  --version Fourier \
-  --mode_select random \
-  --modes 32
+  --itr 1

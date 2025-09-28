@@ -19,9 +19,9 @@ python -u run.py \
   --enc_in 4 \
   --dec_in 4 \
   --c_out 4 \
-  --d_model 16 \
-  --d_ff 32 \
   --des 'Exp' \
+  --d_model 128 \
+  --d_ff 128 \
   --itr 1
 
 python -u run.py \
@@ -43,9 +43,9 @@ python -u run.py \
   --enc_in 4 \
   --dec_in 4 \
   --c_out 4 \
-  --d_model 16 \
-  --d_ff 32 \
   --des 'Exp' \
+  --d_model 128 \
+  --d_ff 128 \
   --itr 1
 
 python -u run.py \
@@ -67,9 +67,9 @@ python -u run.py \
   --enc_in 4 \
   --dec_in 4 \
   --c_out 4 \
-  --d_model 16 \
-  --d_ff 32 \
   --des 'Exp' \
+  --d_model 128 \
+  --d_ff 128 \
   --itr 1
 
 python -u run.py \
@@ -91,7 +91,7 @@ python -u run.py \
   --enc_in 4 \
   --dec_in 4 \
   --c_out 4 \
-  --d_model 16 \
-  --d_ff 32 \
   --des 'Exp' \
+  --d_model 128 \
+  --d_ff 128 \
   --itr 1
