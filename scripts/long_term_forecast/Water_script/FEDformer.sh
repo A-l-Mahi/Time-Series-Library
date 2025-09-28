@@ -1,87 +1,109 @@
-export CUDA_VISIBLE_DEVICES=2
-
-model_name=Autoformer
+model_name=FEDformer
 
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
   --root_path ./dataset/water_quality/ \
-  --data_path water_quality.csv \
-  --model_id water_quality_96_96 \
+  --data_path water-quality.csv \
+  --model_id water_96_96 \
   --model $model_name \
   --data custom \
   --features M \
   --seq_len 96 \
   --label_len 48 \
   --pred_len 96 \
+  --target DO \
   --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 4 \
   --dec_in 4 \
   --c_out 4 \
+  --d_model 16 \
+  --d_ff 32 \
   --des 'Exp' \
-  --itr 1
+  --itr 1 \
+  --version Fourier \
+  --mode_select random \
+  --modes 32
 
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
   --root_path ./dataset/water_quality/ \
-  --data_path water_quality.csv \
-  --model_id water_quality_96_192 \
+  --data_path water-quality.csv \
+  --model_id water_96_192 \
   --model $model_name \
   --data custom \
   --features M \
   --seq_len 96 \
   --label_len 48 \
   --pred_len 192 \
+  --target DO \
   --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 4 \
   --dec_in 4 \
   --c_out 4 \
+  --d_model 16 \
+  --d_ff 32 \
   --des 'Exp' \
-  --itr 1
+  --itr 1 \
+  --version Fourier \
+  --mode_select random \
+  --modes 32
 
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
   --root_path ./dataset/water_quality/ \
-  --data_path water_quality.csv \
-  --model_id water_quality_96_336 \
+  --data_path water-quality.csv \
+  --model_id water_96_336 \
   --model $model_name \
   --data custom \
   --features M \
   --seq_len 96 \
   --label_len 48 \
   --pred_len 336 \
+  --target DO \
   --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 4 \
   --dec_in 4 \
   --c_out 4 \
+  --d_model 16 \
+  --d_ff 32 \
   --des 'Exp' \
-  --itr 1
+  --itr 1 \
+  --version Fourier \
+  --mode_select random \
+  --modes 32
 
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
   --root_path ./dataset/water_quality/ \
-  --data_path water_quality.csv \
-  --model_id water_quality_96_720 \
+  --data_path water-quality.csv \
+  --model_id water_96_720 \
   --model $model_name \
   --data custom \
   --features M \
   --seq_len 96 \
   --label_len 48 \
   --pred_len 720 \
+  --target DO \
   --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 4 \
   --dec_in 4 \
   --c_out 4 \
+  --d_model 16 \
+  --d_ff 32 \
   --des 'Exp' \
-  --itr 1
+  --itr 1 \
+  --version Fourier \
+  --mode_select random \
+  --modes 32
